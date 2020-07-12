@@ -10,3 +10,72 @@
   Tags: CSS Grid, Flexbox Ready, Mobile First, Gym Theme
   Text Domain: gymfitness
 */
+:root {
+  /*Fonts*/
+  --highlightFont: "Staatliches", cursive;
+  --textFont: "Montserrat", sans-serif;
+  --secondaryFont: "Roboto", sans-serif;
+  /* Colors */
+  --accentColor: #ff5b00;
+  --darkGrey: #2f2e2e;
+  --lightGrey: #ebebeb;
+  --white: #ffffff;
+  --black: #212121;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--textFont);
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--black);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: var(--highlightFont);
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  color: var(--highlightFont);
+}
+h3 {
+  font-size: 3.6rem;
+}
+/* Globals */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* Utilities */
