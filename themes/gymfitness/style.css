@@ -88,7 +88,7 @@ img {
 /* Header */
 .site-header {
   background-color: var(--darkGrey);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .logo img {
   width: 50%;
@@ -116,6 +116,24 @@ img {
 .main-menu .current_page_item {
   border-bottom: 3px solid var(--accentColor);
 }
+.slicknav_menu {
+  background-color: var(--darkGrey);
+}
+.slicknav_btn {
+  background-color: var(--darkGrey);
+}
+.slicknav_menu .slicknav_menutxt {
+  display: none;
+}
+.slicknav_nav a{
+  font-family: var(--highlightFont);
+  text-align: center;
+  font-size: 1.6rem;
+}
+.slicknav_nav a:hover{
+  background-color: transparent;
+  color: var(--accentColor);
+}
 
 /* Footer*/
 .site-footer {
@@ -137,10 +155,10 @@ img {
   font-family: var(--highlightFont);
   font-size: 1.8rem;
 }
-.copyright a{
+.copyright a {
   color: var(--mediumGrey);
 }
-.copyright a:hover{
+.copyright a:hover {
   color: var(--accentColor);
 }
 
@@ -163,6 +181,9 @@ img {
   .main-menu li:last-of-type {
     margin-right: 0;
   }
+  .slicknav_menu {
+    display: none;
+  }
   .footer-menu {
     font-family: var(--highlightFont);
     display: flex;
@@ -179,7 +200,7 @@ img {
   }
   .footer-menu .menu a {
     color: var(--black);
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .footer-menu a:hover {
     color: var(--accentColor);
@@ -191,5 +212,10 @@ img {
     font-size: 1.4rem;
     text-align: center;
     flex: 1;
+  }
+  .logo img{
+    width:33%;
+    display: block;
+    margin: 0 auto;
   }
 }

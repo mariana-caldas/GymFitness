@@ -11,5 +11,6 @@
             <p class="copyright">By <a href="https://www.marianacaldas.com/" target="_blank" rel="noreferrer noopener" title="Mariana Caldas Web Dev/Front-End Portfolio">Mariana Caldas</a>. All Rights Reserved. <?php echo get_bloginfo('name') . " " . date('Y'); ?></p>
         </div>
     </footer>
+    <?php wp_footer(); ?>
 </body>
 </html>

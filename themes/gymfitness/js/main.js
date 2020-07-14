@@ -2,6 +2,5 @@
 $ = jQuery.noConflict();
 
 $(document).ready(function () {
-   
-
+    $('#menu-main-menu').slicknav();
 });
