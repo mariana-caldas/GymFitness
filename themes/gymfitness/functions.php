@@ -17,6 +17,8 @@ function gymfitness_scripts(){
     wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700;900&family=Staatliches&display=swap', array(), '1.0.0');
     //Main Stylesheet
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'googleFonts'), '1.0.0');
+    //Main JS
+    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0');
 }
 add_action('wp_enqueue_scripts', 'gymfitness_scripts');
 
