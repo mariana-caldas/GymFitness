@@ -74,8 +74,51 @@ ul {
   width: 95%;
   margin: 0 auto;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 /* Utilities */
+
+/* Header */
+.site-header {
+  background-color: var(--darkGrey);
+  padding: 2rem 0;
+}
+.logo img {
+  width: 50%;
+}
+/* Menu */
+.main-menu {
+  display: none;
+}
+.main-menu a {
+  color: var(--white);
+  font-size: 2.2rem;
+  font-family: var(--highlightFont);
+  padding: 0.5rem 2rem;
+}
+.main-menu .current_page_item {
+  border-bottom: 3px solid var(--accentColor);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .navigation-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-menu {
+    display: flex;
+  }
+  .main-menu .menu {
+    display: flex;
+    align-items: center;
+  }
+  .main-menu li {
+    margin-right: 2rem;
+  }
+  .main-menu li:last-of-type {
+    margin-right: 0;
+  }
+}
