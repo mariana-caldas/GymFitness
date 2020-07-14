@@ -19,6 +19,7 @@
   --accentColor: #ff5b00;
   --darkGrey: #2f2e2e;
   --lightGrey: #ebebeb;
+  --mediumGrey: #949494;
   --white: #ffffff;
   --black: #212121;
 }
@@ -63,6 +64,10 @@ h3 {
 /* Globals */
 a {
   text-decoration: none;
+  -webkit-transition: color 0.25s ease-in-out 0s;
+  -moz-transition: color 0.25s ease-in-out 0s;
+  -o-transition: color 0.25s ease-in-out 0s;
+  transition: color 0.25s ease-in-out 0s;
 }
 ul {
   list-style: none;
@@ -87,6 +92,13 @@ img {
 }
 .logo img {
   width: 50%;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.logo img:hover {
+  opacity: 0.6;
 }
 /* Menu */
 .main-menu {
@@ -98,8 +110,38 @@ img {
   font-family: var(--highlightFont);
   padding: 0.5rem 2rem;
 }
+.main-menu a:hover {
+  color: var(--accentColor);
+}
 .main-menu .current_page_item {
   border-bottom: 3px solid var(--accentColor);
+}
+
+/* Footer*/
+.site-footer {
+  border-top: 1px solid var(--lightGrey);
+  padding: 1rem 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu {
+  display: none;
+}
+.footer-menu li.current_page_item {
+  border-bottom: 2px solid var(--accentColor);
+  margin-top: 2px;
+}
+.copyright {
+  font-family: var(--highlightFont);
+  font-size: 1.8rem;
+}
+.copyright a{
+  color: var(--mediumGrey);
+}
+.copyright a:hover{
+  color: var(--accentColor);
 }
 
 /* Media Queries */
@@ -120,5 +162,34 @@ img {
   }
   .main-menu li:last-of-type {
     margin-right: 0;
+  }
+  .footer-menu {
+    font-family: var(--highlightFont);
+    display: flex;
+  }
+  .footer-menu .menu {
+    display: flex;
+    align-items: center;
+  }
+  .footer-menu .menu li {
+    margin-right: 2rem;
+  }
+  .footer-menu .menu li:last-of-type {
+    margin-right: 0;
+  }
+  .footer-menu .menu a {
+    color: var(--black);
+    font-size: 1.8rem;
+  }
+  .footer-menu a:hover {
+    color: var(--accentColor);
+  }
+}
+
+@media (max-width: 767px) {
+  .copyright {
+    font-size: 1.2rem;
+    text-align: center;
+    flex: 1;
   }
 }
