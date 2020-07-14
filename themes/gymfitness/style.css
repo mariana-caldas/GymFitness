@@ -188,7 +188,7 @@ img {
 
 @media (max-width: 767px) {
   .copyright {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     flex: 1;
   }
