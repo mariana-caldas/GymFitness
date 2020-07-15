@@ -4,11 +4,8 @@
         <h1 class="text-center text-primary"><?php the_title(); ?></h1>
         <?php 
           if(has_post_thumbnail()):
-             the_post_thumbnail();
-          else:
-            echo "<p>No featured image uploaded to this page</p>";
+             the_post_thumbnail('blog');
           endif;
-        
         ?>
         <div class="text-center">
             <?php the_content(); ?>

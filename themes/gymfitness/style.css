@@ -84,6 +84,15 @@ img {
   height: auto;
 }
 /* Utilities */
+.text-center {
+  text-align: center;
+}
+.text-primary{
+  color: var(--accentColor);
+}
+.page{
+  padding: 5rem 0;
+}
 
 /* Header */
 .site-header {
@@ -125,12 +134,12 @@ img {
 .slicknav_menu .slicknav_menutxt {
   display: none;
 }
-.slicknav_nav a{
+.slicknav_nav a {
   font-family: var(--highlightFont);
   text-align: center;
   font-size: 1.6rem;
 }
-.slicknav_nav a:hover{
+.slicknav_nav a:hover {
   background-color: transparent;
   color: var(--accentColor);
 }
@@ -213,8 +222,8 @@ img {
     text-align: center;
     flex: 1;
   }
-  .logo img{
-    width:33%;
+  .logo img {
+    width: 33%;
     display: block;
     margin: 0 auto;
   }
