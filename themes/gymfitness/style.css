@@ -89,11 +89,8 @@ img {
 }
 .text-primary{
   color: var(--accentColor);
+  margin-bottom: 1.5rem;
 }
-.page{
-  padding: 5rem 0;
-}
-
 /* Header */
 .site-header {
   background-color: var(--darkGrey);
@@ -142,6 +139,16 @@ img {
 .slicknav_nav a:hover {
   background-color: transparent;
   color: var(--accentColor);
+}
+
+/* Page Template*/
+.page{
+  padding: 5rem 0;
+}
+
+.page.no-sidebars{
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 /* Footer*/
