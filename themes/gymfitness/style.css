@@ -55,7 +55,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 4.2rem;
   color: var(--highlightFont);
 }
 h3 {
@@ -87,7 +87,7 @@ img {
 .text-center {
   text-align: center;
 }
-.text-primary{
+.text-primary {
   color: var(--accentColor);
   margin-bottom: 1.5rem;
 }
@@ -142,11 +142,11 @@ img {
 }
 
 /* Page Template*/
-.page{
+.page {
   padding: 5rem 0;
 }
 
-.page.no-sidebars{
+.page.no-sidebars {
   max-width: 80rem;
   margin: 0 auto;
 }
@@ -199,6 +199,16 @@ img {
   }
   .slicknav_menu {
     display: none;
+  }
+  .page.with-sidebar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .with-sidebar .main-content {
+    flex: 0 0 calc(65% - 2rem);
+  }
+  .with-sidebar .sidebar {
+    flex: 0 0 calc(35% - 2rem);
   }
   .footer-menu {
     font-family: var(--highlightFont);
