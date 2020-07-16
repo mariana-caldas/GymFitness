@@ -39,4 +39,20 @@ function gymfitness_setup(){
 }
 add_action('after_setup_theme', 'gymfitness_setup');
 
+//Creates Widget Zone
+function gymfitness_sidebar() {
+    register_sidebar( 
+        array(
+            'id'            => 'primary-sidebar',
+            'name'          => 'Gym Fitness Sidebar',
+            'description'   => 'For the the page templates with sidebar.',
+            'before_widget' => '<div class="widget">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>'
+        )
+    );
+}
+add_action( 'widgets_init', 'gymfitness_sidebar' );
+
 ?>

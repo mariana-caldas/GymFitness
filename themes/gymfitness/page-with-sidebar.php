@@ -16,8 +16,6 @@ get_header();
             <?php the_content(); ?>
             <?php endwhile; ?>
         </div>
-        <aside class="sidebar">
-            <h2>Sidebar here</h2>
-        </aside>
+        <?php get_sidebar(); ?>
     </main>
 <?php get_footer(); ?>
