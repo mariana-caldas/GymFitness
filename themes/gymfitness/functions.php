@@ -1,4 +1,6 @@
 <?php 
+//Link to the queries file
+require get_template_directory() . '/inc/queries.php';
 
 //Creates the menu
 function gymfitness_menus(){
