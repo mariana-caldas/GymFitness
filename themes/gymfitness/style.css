@@ -151,6 +151,27 @@ img {
   margin: 0 auto;
 }
 
+/* Page Classes */
+.card {
+  margin-bottom: 4rem;
+}
+.card img {
+  display: block;
+}
+.card-content {
+  text-align: center;
+  padding-top: 2rem;
+}
+.card-content a {
+  color: var(--black);
+}
+.card-content p {
+  color: var(--accentColor);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
 /* Footer*/
 .site-footer {
   border-top: 1px solid var(--lightGrey);
@@ -209,6 +230,60 @@ img {
   }
   .with-sidebar .sidebar {
     flex: 0 0 calc(35% - 2rem);
+  }
+  .classes-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 0 0 calc(50% - 2rem);
+    position: relative;
+  }
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 100%;
+    z-index: 1;
+    text-align: left;
+  }
+  .card-content a {
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--black);
+  }
+  .card-content p {
+    width: 90%;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px var(--black);
+  }
+  .gradient:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+80 */
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 80%,
+      rgba(0, 0, 0, 0.4) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 80%,
+      rgba(0, 0, 0, 0.4) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 80%,
+      rgba(0, 0, 0, 0.4) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
   }
   .footer-menu {
     font-family: var(--highlightFont);
