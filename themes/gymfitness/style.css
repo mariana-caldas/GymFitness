@@ -172,6 +172,13 @@ img {
   margin-top: 0;
 }
 
+/* Single Class*/
+.content-post-class{
+  font-weight: 700;
+  font-family: var(--secondaryFont);
+  font-size: 1.6rem;
+}
+
 /* Footer*/
 .site-footer {
   border-top: 1px solid var(--lightGrey);
