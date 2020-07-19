@@ -2,7 +2,7 @@
 
 ## WordPress Template with Plugin Development.
 
-In this template, a custom post type plugin was developed to make it possible to register the classes easily on the dashboard.
+In this template, a custom post type plugin was developed to make it possible to register the classes easily on the dashboard. Also, a custom widget plugin was developed to display the available classes on a sidebar.
 
 1. Page Classes Desktop
 
