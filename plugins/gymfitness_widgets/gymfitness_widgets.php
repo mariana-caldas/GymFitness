@@ -35,13 +35,15 @@
 	 * @param array $instance Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
-		echo $args['before_widget']; ?>
-		<h2 class="sidebar-classes-main-title">Our Classes</h2>
+		echo $args['before_widget']; 
+		$quantity = $instance['quantity'];
+		?>
+		<h2 class="sidebar-classes-main-title"><?php echo esc_html($instance['title']) ?></h2>
         <ul class="sidebar-classes-list">
             <?php
                 $args = array(
 					'post_type' => 'gymfitness-classes',
-					'posts_per_page' => 4,
+					'posts_per_page' => $quantity,
 					'orderby' => 'rand'
                 );
                 $classes = new WP_Query($args);
@@ -79,10 +81,25 @@
 	 */
 	public function form( $instance ) {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'gymfitness-widgets' );
+		$quantity = ! empty( $instance['quantity'] ) ? $instance['quantity'] : esc_html__( '1', 'gymfitness-widgets' );
 		?>
 		<p>
-		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'gymfitness-widgets' ); ?></label> 
-		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>">
+				<?php esc_attr_e( 'Title:', 'gymfitness-widgets' ); ?>
+			</label> 
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+			 name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+			 type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'quantity' ) ); ?>">
+				<?php esc_attr_e( 'Number of classes to display:', 'gymfitness-widgets' ); ?>
+			</label> 
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'quantity' ) ); ?>"
+			 name="<?php echo esc_attr( $this->get_field_name( 'quantity' ) ); ?>"
+			 type="number" value="<?php echo esc_attr( $quantity ); ?>" 
+			 min="1"
+			 >
 		</p>
 		<?php 
 	}
@@ -100,6 +117,7 @@
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
+		$instance['quantity'] = ( ! empty( $new_instance['quantity'] ) ) ? sanitize_text_field( $new_instance['quantity'] ) : '';
 
 		return $instance;
 	}
