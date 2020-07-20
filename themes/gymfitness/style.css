@@ -19,7 +19,7 @@
   --accentColor: #ff5b00;
   --darkGrey: #2f2e2e;
   --lightGrey: #ebebeb;
-  --mediumGrey: #949494;
+  --mediumGrey: #555555;
   --white: #ffffff;
   --black: #212121;
 }
@@ -90,6 +90,7 @@ img {
 .text-primary {
   color: var(--accentColor);
   margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px var(--mediumGrey);
 }
 /* Header */
 .site-header {
@@ -173,12 +174,47 @@ img {
 }
 
 /* Single Class*/
-.content-post-class{
+.content-post-class {
   font-weight: 700;
   font-family: var(--secondaryFont);
   font-size: 1.6rem;
 }
 
+/* Sidebar Widget */
+.widget-blog {
+  margin-bottom: 4rem;
+}
+.widget-blog-title {
+  color: var(--darkGrey);
+}
+.widget-blog li {
+  line-height: 2.8rem;
+}
+.widget-blog a {
+  color: var(--mediumGrey);
+}
+.widget-blog a:hover {
+  color: var(--accentColor);
+}
+.sidebar-classes-main-title{
+  color: var(--darkGrey);
+  margin-bottom: 1rem;
+} 
+.sidebar-widget-class-content h3,
+.widget-blog-title {
+  font-size: 3rem;
+}
+.sidebar-widget-class-content a {
+  color: var(--darkGrey);
+}
+.sidebar-widget-class-content a:hover {
+  color: var(--accentColor);
+}
+.sidebar-widget-class-content p{
+  margin-top: 0;
+  line-height: 2.2rem;
+  color: var(--mediumGrey);
+}
 /* Footer*/
 .site-footer {
   border-top: 1px solid var(--lightGrey);
@@ -233,10 +269,10 @@ img {
     justify-content: space-between;
   }
   .with-sidebar .main-content {
-    flex: 0 0 calc(65% - 2rem);
+    flex: 0 0 calc(60% - 2rem);
   }
   .with-sidebar .sidebar {
-    flex: 0 0 calc(35% - 2rem);
+    flex: 0 0 calc(40% - 2rem);
   }
   .classes-list {
     display: flex;
@@ -291,6 +327,16 @@ img {
       rgba(0, 0, 0, 0.4) 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+  }
+  .sidebar-class-item-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar-widget-class-image {
+    flex: 0 0 25%;
+  }
+  .sidebar-widget-class-content {
+    flex: 0 0 70%;
   }
   .footer-menu {
     font-family: var(--highlightFont);

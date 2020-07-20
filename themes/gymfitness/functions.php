@@ -48,9 +48,9 @@ function gymfitness_sidebar() {
             'id'            => 'primary-sidebar',
             'name'          => 'Gym Fitness Sidebar',
             'description'   => 'For the the page templates with sidebar.',
-            'before_widget' => '<div class="widget">',
+            'before_widget' => '<div class="widget-blog">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
+            'before_title'  => '<h3 class="widget-blog-title">',
             'after_title'   => '</h3>'
         )
     );

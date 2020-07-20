@@ -36,10 +36,13 @@
 	 */
 	public function widget( $args, $instance ) {
 		echo $args['before_widget']; ?>
+		<h2 class="sidebar-classes-main-title">Our Classes</h2>
         <ul class="sidebar-classes-list">
             <?php
                 $args = array(
-                    'post_type' => 'gymfitness-classes',
+					'post_type' => 'gymfitness-classes',
+					'posts_per_page' => 4,
+					'orderby' => 'rand'
                 );
                 $classes = new WP_Query($args);
                 while($classes->have_posts()):$classes->the_post();
