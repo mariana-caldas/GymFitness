@@ -57,4 +57,7 @@ function gymfitness_sidebar() {
 }
 add_action( 'widgets_init', 'gymfitness_sidebar' );
 
+//Remove WordPress Admin Bar CSS (White Space at the top)
+add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
+
 ?>
