@@ -7,7 +7,7 @@
 <?php get_header(); ?>
     <main class="container page">
         <?php while (have_posts()) : the_post(); ?>
-            <h1 class="text-primary"><?php the_title(); ?></h1>
+            <h1 class="text-primary text-center"><?php the_title(); ?></h1>
             <?php 
             $gallery = get_post_gallery(get_the_ID(), false);
             $gallery_images_ids = explode(',', $gallery['ids']);

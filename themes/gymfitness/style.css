@@ -199,10 +199,11 @@ img {
 .sidebar-classes-main-title{
   color: var(--darkGrey);
   margin-bottom: 1rem;
+  font-size: 3.2rem;
 } 
 .sidebar-widget-class-content h3,
 .widget-blog-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 .sidebar-widget-class-content a {
   color: var(--darkGrey);
