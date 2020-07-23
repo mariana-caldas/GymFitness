@@ -24,7 +24,7 @@ In this template, a custom post type plugin was developed to make it possible to
 ![Gallery Page](/project-images-github/gallery-page.png)
 
 
-5. Gallery Page
+5. Gallery Page Mobile
 
 ![Gallery Page Mobile](/project-images-github/gallery-mobile.png)
 
