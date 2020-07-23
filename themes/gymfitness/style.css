@@ -220,7 +220,7 @@ img {
 /*Gallery Page*/
 .gallery-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(6, auto);
   grid-gap: 2rem;
 }
