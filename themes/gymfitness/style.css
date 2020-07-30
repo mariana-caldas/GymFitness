@@ -68,6 +68,7 @@ a {
   -moz-transition: color 0.25s ease-in-out 0s;
   -o-transition: color 0.25s ease-in-out 0s;
   transition: color 0.25s ease-in-out 0s;
+  cursor: pointer;
 }
 ul {
   list-style: none;
@@ -174,6 +175,7 @@ img {
   font-weight: 700;
   margin-bottom: 0.5rem;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Blog Entries */
@@ -185,6 +187,28 @@ img {
 
 .card-content p.meta span {
   color: var(--white);
+}
+
+/* Categories */
+.post-categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.post-categories li {
+  margin-right: 2rem;
+}
+.post-categories li:last-of-type {
+  margin-right: 0;
+}
+.post-categories a {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--accentColor);
+  color: var(--white);
+  text-shadow: 1px 1px 4px var(--darkGrey);
+  font-size: 1.8rem;
+  font-family: var(--highlightFont);
 }
 
 /* Single Class*/
@@ -347,7 +371,7 @@ img {
     position: absolute;
     bottom: 0;
     left: 5%;
-    width: 100%;
+    width: 95%;
     z-index: 1;
     text-align: left;
   }
@@ -362,6 +386,12 @@ img {
     width: 90%;
     font-size: 1.5rem;
     text-shadow: 1px 1px 1px var(--black);
+  }
+  .post-categories {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 1;
   }
   .gradient:after {
     content: "";
