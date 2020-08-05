@@ -175,17 +175,20 @@ img {
   font-weight: 700;
   margin-bottom: 0.5rem;
   margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* Blog Entries */
-.card-content p.date-published {
+.blog-entries .card-content p{
+  margin-bottom: 0;
+}
+
+.blog-entries .card-content p.date-published {
   position: relative;
   bottom: 1rem;
   font-size: 1.3rem;
 }
 
-.card-content p.meta span {
+.blog-entries .card-content p.meta span {
   color: var(--white);
 }
 
