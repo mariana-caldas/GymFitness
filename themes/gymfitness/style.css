@@ -178,7 +178,7 @@ img {
 }
 
 /* Blog Entries */
-.blog-entries .card-content p{
+.blog-entries .card-content p {
   margin-bottom: 0;
 }
 
@@ -304,10 +304,38 @@ img {
   color: var(--accentColor);
 }
 
+/* Contact Us */
+.wpcf7-form-control {
+  width: 100%;
+  border: 1px solid var(--lightGrey);
+  padding: 1rem;
+}
+.wpcf7-submit {
+  background-color: var(--accentColor);
+  color: var(--white);
+  font-family: var(--highlightFont);
+  font-size: 2rem;
+  padding: 1.3rem;
+  cursor: pointer;
+  -webkit-transition: color 0.25s ease-in-out 0s;
+  -moz-transition: color 0.25s ease-in-out 0s;
+  -o-transition: color 0.25s ease-in-out 0s;
+  transition: color 0.25s ease-in-out 0s;
+}
+.wpcf7-submit:hover {
+  opacity: 0.6;
+}
+.wpcf7 .ajax-loader {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 4rem;
+  width: 4rem;
+}
+
 /* Media Queries */
 @media (min-width: 850px) {
   .main-menu li {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
   }
   .footer-menu {
     font-family: var(--highlightFont);
