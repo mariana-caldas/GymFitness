@@ -1,6 +1,8 @@
 <?php 
 //Link to the queries file
 require get_template_directory() . '/inc/queries.php';
+//Link to API keys
+require get_template_directory() . '/keys/apiKeys.php';
 
 //Creates the menu
 function gymfitness_menus(){
@@ -71,5 +73,13 @@ add_action( 'widgets_init', 'gymfitness_sidebar' );
 
 //Remove WordPress Admin Bar CSS (White Space at the top)
 add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
+
+//Adding Google Maps API Key
+
+function my_acf_google_map_api( $api ){
+	$api['key'] = GOOGLE_MAPS_API;
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 ?>
