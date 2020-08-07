@@ -16,15 +16,14 @@
 //Shortcode API
 function gymfitness_location_shortcode(){ 
     $location = get_field('location_map');
+    if($location):
     ?>
-    <div class="location-map">
-        <input type="hidden" id="lat" value="<?php echo $location['lat']; ?>" />
-   </div>
-   
-<?php
+    <div class="acf-map" data-zoom="<?php echo esc_attr($location['zoom']); ?>">
+        <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
+    </div>
+    <?php endif;
+
 }
 add_shortcode('gymfitness_location_map', 'gymfitness_location_shortcode');
-
-
 
 ?>

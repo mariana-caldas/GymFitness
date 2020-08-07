@@ -39,6 +39,8 @@ function gymfitness_scripts(){
     
     //Main JS
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
+    // Google Maps
+    wp_enqueue_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API, array(), '', true);
 }
 add_action('wp_enqueue_scripts', 'gymfitness_scripts');
 
@@ -74,8 +76,7 @@ add_action( 'widgets_init', 'gymfitness_sidebar' );
 //Remove WordPress Admin Bar CSS (White Space at the top)
 add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
 
-//Adding Google Maps API Key
-
+//Adding Google Maps API Key to allow map loadind on ACF plugin
 function my_acf_google_map_api( $api ){
 	$api['key'] = GOOGLE_MAPS_API;
 	return $api;
