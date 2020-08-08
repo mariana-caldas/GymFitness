@@ -3,7 +3,7 @@
 /* 
     Plugin Name: Gym Fitness - Location Map
     Plugin URI:
-    Description: Creates a shortcode to display the map
+    Description: Creates a shortcode to display the Google Map whose data comes from Advanced Custom Fields
     Version: 1.0
     Author: Mariana Caldas
     Author URI: https://www.marianacaldas.com/
@@ -25,5 +25,12 @@ function gymfitness_location_shortcode(){
 
 }
 add_shortcode('gymfitness_location_map', 'gymfitness_location_shortcode');
+
+//Adding Google Maps API Key to allow map loadind on ACF plugin
+function my_acf_google_map_api( $api ){
+	$api['key'] = get_field('google_key');
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 ?>
