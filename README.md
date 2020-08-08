@@ -2,11 +2,11 @@
 
 ### WordPress Template with Plugin Development.
 
-In this template, three plugins have been deleloped:
+In this template, three plugins have been developed:
 
 * A custom post type plugin to make it possible to register the classes easily on the Dashboard. 
-* A custom widget plugin to display the available classes on a sidebar. The users can edit the number of classes to be displayed on the Dashboard.
-* A shortcode plugin that allows to use a shortcode to display a map (Google Maps) on the Contact Us page. The users can edit the map coordinates, zoom, an add the Google API Key on the page Contact Us through fields created with the ACF plugin.
+* A custom widget plugin to display the available classes on the sidebar. The users can edit the number of classes to be displayed on the Dashboard.
+* A shortcode plugin that provides a shortcode to display a map (Google Maps) on the Contact Us page. The users can edit the map coordinates, zoom, and add the Google API Key on the page Contact Us through fields created with the ACF plugin.
 
 ---
 
