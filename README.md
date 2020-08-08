@@ -14,31 +14,31 @@ In this template, three plugins have been deleloped:
 
 ![Contact Us Page](/project-images-github/contact-us-page.png)
 
-
+---
 
 **2. Page Classes**
 
 ![Classes Page](/project-images-github/page-classes-desktop.png)
 
-
+---
 
 **3. Page Classes Single with sidebar**
 
 ![Classes Page Sidebar](/project-images-github/classes-sidebar.png)
 
-
+---
 
 **4. About Us Page**
 
 ![About Us Page](/project-images-github/about-us-gymfitness.png)
 
-
+---
 
 **5. Gallery Page**
 
 ![Gallery Page](/project-images-github/gallery-page.png)
 
-
+---
 
 **6. Gallery Page Mobile**
 
