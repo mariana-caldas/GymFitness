@@ -8,7 +8,10 @@ In this template, three plugins have been deleloped:
 * A custom widget plugin to display the available classes on a sidebar. The users can edit the number of classes to be displayed on the Dashboard.
 * A shortcode plugin that allows to use a shortcode to display a map (Google Maps) on the Contact Us page. The users can edit the map coordinates, zoom, an add the Google API Key on the page through fields created with the ACF plugin.
 
+
+
 1. Contact Us Page
+
 ![Contact Us Page](/project-images-github/contact-us-page.png)
 
 
