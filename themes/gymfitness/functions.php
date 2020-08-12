@@ -37,8 +37,6 @@ function gymfitness_scripts(){
     
     //Main JS
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
-    // Google Maps
-    wp_enqueue_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=' . get_field('google_key'), array(), '', true);
 }
 add_action('wp_enqueue_scripts', 'gymfitness_scripts');
 

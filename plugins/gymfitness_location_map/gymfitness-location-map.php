@@ -33,4 +33,11 @@ function my_acf_google_map_api( $api ){
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+//Enqueues the JS and CSS files
+function gymfitness_location_scripts(){
+    // Google Maps
+    wp_enqueue_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=' . get_field('google_key'), array(), '', true);
+}
+add_action('wp_enqueue_scripts', 'gymfitness_location_scripts');
+
 ?>
