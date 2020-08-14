@@ -332,17 +332,6 @@ img {
   width: 4rem;
 }
 
-/* Google Maps */
-.acf-map {
-  width: 100%;
-  height: 400px;
-  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
-  margin: 1.5rem 0 4rem 0;
-}
-.acf-map img {
-  max-width: inherit !important;
-}
-
 /* Media Queries */
 @media (min-width: 850px) {
   .main-menu li {

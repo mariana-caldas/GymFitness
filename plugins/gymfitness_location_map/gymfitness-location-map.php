@@ -37,8 +37,9 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 function gymfitness_location_scripts(){
     // Google Maps
     if(is_page('contact-us')):
+     wp_enqueue_style('gymfitness-googlemaps-style', plugins_url('/css/gymfitness-googlemaps-acf.css', __FILE__), array(), '1.0.0');
      wp_enqueue_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=' . get_field('google_key'), array(), '1.0.0', true);
-     wp_enqueue_script('gymfitness-googlemaps-acf', plugins_url('/js/gymfitness-googlemaps-acf.js', __FILE__), array(), '1.0.0', true);
+     wp_enqueue_script('gymfitness-googlemaps-js', plugins_url('/js/gymfitness-googlemaps-acf.js', __FILE__), array(), '1.0.0', true);
     endif;
 }
 add_action('wp_enqueue_scripts', 'gymfitness_location_scripts');
