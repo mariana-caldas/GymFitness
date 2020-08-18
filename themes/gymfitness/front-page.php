@@ -1,1 +1,3 @@
-<h1> Front page </h1>
+<?php get_header('front-page'); ?>
+
+<?php get_footer(); ?>
