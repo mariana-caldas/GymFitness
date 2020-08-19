@@ -8,7 +8,7 @@
     <?php wp_head() ?>
 </head>
 
-<body>
+<body class="front-page">
     <header class="site-header">
         <div class="container header-grid">
             <div class="navigation-bar">
