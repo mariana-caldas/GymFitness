@@ -22,6 +22,8 @@
   --mediumGrey: #555555;
   --white: #ffffff;
   --black: #212121;
+  --textShadowBlack: 1px 1px 1px var(--black);
+  --textShadowGrey: 1px 1px 2px var(--mediumGrey);
 }
 
 html {
@@ -91,7 +93,7 @@ img {
 .text-primary {
   color: var(--accentColor);
   margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 2px var(--mediumGrey);
+  text-shadow: var(--textShadowGrey);
 }
 /* Header */
 .site-header {
@@ -117,6 +119,9 @@ img {
 .tagline {
   color: var(--white);
   margin-top: 10rem;
+}
+.tagline h1{
+  text-shadow: var(--textShadowBlack);
 }
 .tagline p{
   font-size: 2rem;
@@ -222,7 +227,7 @@ img {
   border-radius: 0.5rem;
   background-color: var(--accentColor);
   color: var(--white);
-  text-shadow: 1px 1px 4px var(--darkGrey);
+  text-shadow: var(--textShadowGrey);
   font-size: 1.8rem;
   font-family: var(--highlightFont);
 }
@@ -435,7 +440,7 @@ img {
   }
   .card-content a {
     color: var(--white);
-    text-shadow: 1px 1px 2px var(--black);
+    text-shadow: var(--textShadowBlack);
   }
   .card-content a:hover {
     color: var(--accentColor);
@@ -443,7 +448,7 @@ img {
   .card-content p {
     width: 90%;
     font-size: 1.5rem;
-    text-shadow: 1px 1px 1px var(--black);
+    text-shadow: var(--textShadowBlack);
   }
   .post-categories {
     position: absolute;
