@@ -515,6 +515,9 @@ img {
 }
 
 @media (max-width: 767px) {
+  h1{
+    font-size: 3em;
+  }
   .logo img {
     width: 33%;
     display: block;
