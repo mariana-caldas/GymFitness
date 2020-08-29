@@ -82,7 +82,7 @@ ul {
   width: 95%;
   margin: 0 auto;
 }
-section {
+.section {
   padding: 3em 0;
 }
 img {
@@ -128,6 +128,11 @@ img {
 }
 .tagline p {
   font-size: 2rem;
+}
+
+/* Areas Front Page */
+.areas-container {
+  display: flex;
 }
 
 /* Menu */
