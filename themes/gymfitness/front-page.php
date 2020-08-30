@@ -21,41 +21,39 @@
                 <?php 
                     $area1 = get_field('area_1');
                     $image = wp_get_attachment_image_src($area1['area_image'], 'mediumSize')[0];
-                    // var_dump($image);
-                
+                    $post1 = 52;
                 ?>
                  <img src="<?php echo $image ?>" />
-                 <p><?php echo $area1['area_name'] ?></p>
+                 <a href="<?php get_post_permalink(the_permalink($post1)); ?>"><?php echo $area1['area_name'] ?></a>
             </li>
+            
             <li class="area">
                 <?php 
                     $area2 = get_field('area_2');
                     $image = wp_get_attachment_image_src($area2['area_image'], 'mediumSize')[0];
-                    // var_dump($image);
-                
+                    $post2 =30;
                 ?>
                  <img src="<?php echo $image ?>" />
-                 <p><?php echo $area2['area_name'] ?></p>
+                 <a href="<?php get_post_permalink(the_permalink($post2)); ?>"><?php echo $area2['area_name'] ?></a>
             </li>
             <li class="area">
                 <?php 
                     $area3 = get_field('area_3');
                     $image = wp_get_attachment_image_src($area3['area_image'], 'mediumSize')[0];
-                    // var_dump($image);
-                
+                    $post3 = 53;
                 ?>
                  <img src="<?php echo $image ?>" />
-                 <p><?php echo $area3['area_name'] ?></p>
+                 <a href="<?php get_post_permalink(the_permalink($post3)); ?>"><?php echo $area3['area_name'] ?></a>
             </li>
             <li class="area">
                 <?php 
                     $area4 = get_field('area_4');
                     $image = wp_get_attachment_image_src($area4['area_image'], 'mediumSize')[0];
-                    // var_dump($image);
+                    $post4 = 55;
                 
                 ?>
                  <img src="<?php echo $image ?>" />
-                 <p><?php echo $area4['area_name'] ?></p>
+                 <a href="<?php get_post_permalink(the_permalink($post4)); ?>"><?php echo $area4['area_name'] ?></a>
             </li>
         </ul>
 
