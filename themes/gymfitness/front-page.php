@@ -21,7 +21,7 @@
                 <?php 
                     $area1 = get_field('area_1');
                     $image = wp_get_attachment_image_src($area1['area_image'], 'mediumSize')[0];
-                    $post1 = 52;
+                    $post1 = $area1['post1'];
                 ?>
                  <img src="<?php echo $image ?>" />
                  <a href="<?php get_post_permalink(the_permalink($post1)); ?>"><?php echo $area1['area_name'] ?></a>
@@ -31,7 +31,7 @@
                 <?php 
                     $area2 = get_field('area_2');
                     $image = wp_get_attachment_image_src($area2['area_image'], 'mediumSize')[0];
-                    $post2 =30;
+                    $post2 =$area2['post2'];
                 ?>
                  <img src="<?php echo $image ?>" />
                  <a href="<?php get_post_permalink(the_permalink($post2)); ?>"><?php echo $area2['area_name'] ?></a>
@@ -40,7 +40,7 @@
                 <?php 
                     $area3 = get_field('area_3');
                     $image = wp_get_attachment_image_src($area3['area_image'], 'mediumSize')[0];
-                    $post3 = 53;
+                    $post3 = $area3['post3'];
                 ?>
                  <img src="<?php echo $image ?>" />
                  <a href="<?php get_post_permalink(the_permalink($post3)); ?>"><?php echo $area3['area_name'] ?></a>
@@ -49,7 +49,7 @@
                 <?php 
                     $area4 = get_field('area_4');
                     $image = wp_get_attachment_image_src($area4['area_image'], 'mediumSize')[0];
-                    $post4 = 55;
+                    $post4 = $area4['post4'];
                 
                 ?>
                  <img src="<?php echo $image ?>" />
