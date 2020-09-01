@@ -1,13 +1,14 @@
 <?php
 
-function gymfitness_classes_list(){ ?>
+function gymfitness_classes_list($number_of_classes = -1){ ?>
   <ul class="classes-list">
     <?php 
         $args = array(
             'post_type' => 'gymfitness-classes',
             'post_status' => 'publish',
             'orderby' => 'title', 
-            'order' => 'ASC', 
+            'order' => 'ASC',
+            'posts_per_page' => $number_of_classes,
         );   
         $classes = new WP_Query($args);
 

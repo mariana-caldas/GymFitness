@@ -56,9 +56,16 @@
                  <a href="<?php get_post_permalink(the_permalink($post4)); ?>"><?php echo $area4['area_name'] ?></a>
             </li>
         </ul>
-
     </section>
-
+    <section class="classes-frontpage">
+        <div class="container section">
+            <h2 class="text-primary text-center">Our Classes</h2>
+            <?php gymfitness_classes_list(4)?>
+            <div class="button-container">
+                <a class="button" href="<?php echo get_permalink(get_page_by_title('Classes')); ?>">View All Classes</a>
+            </div>
+        </div>
+    </section>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
