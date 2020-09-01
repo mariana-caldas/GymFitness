@@ -109,21 +109,21 @@ img {
   justify-content: flex-end;
 }
 .button {
-  display:block;
+  display: block;
   background-color: var(--accentColor);
   color: var(--white);
   flex: 1;
   text-align: center;
   padding: 1rem 3rem;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-family: var(--highlightFont);
+  font-size: 2rem;
   text-shadow: var(--textShadowGrey);
-  -webkit-transition: background-color .5s ease;
-  -moz-transition: background-color .5s ease;
-  -o-transition: background-color .5s ease;
-  transition: background-color .5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
-.button:hover{
+.button:hover {
   background-color: var(--darkAccentColor);
 }
 
@@ -403,13 +403,14 @@ img {
   font-size: 2rem;
   padding: 1.3rem;
   cursor: pointer;
-  -webkit-transition: color 0.25s ease-in-out 0s;
-  -moz-transition: color 0.25s ease-in-out 0s;
-  -o-transition: color 0.25s ease-in-out 0s;
-  transition: color 0.25s ease-in-out 0s;
+  text-shadow: var(--textShadowGrey);
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 .wpcf7-submit:hover {
-  opacity: 0.6;
+  background-color: var(--darkAccentColor);
 }
 .wpcf7 .ajax-loader {
   background-repeat: no-repeat;
@@ -446,7 +447,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .button{
+  .button {
     flex: 0 0 auto;
     display: inline-block;
   }
