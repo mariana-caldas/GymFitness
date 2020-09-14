@@ -262,6 +262,9 @@ img {
 }
 
 /* Classes Front-Page */
+.classes-frontpage{
+  background-color: var(--lightGrey);
+}
 .classes-frontpage h2 {
   margin-bottom: 3.5rem;
 }

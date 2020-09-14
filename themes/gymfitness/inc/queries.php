@@ -1,5 +1,5 @@
 <?php
-
+//Displays the classes 
 function gymfitness_classes_list($number_of_classes = -1){ ?>
   <ul class="classes-list">
     <?php 
@@ -30,5 +30,36 @@ function gymfitness_classes_list($number_of_classes = -1){ ?>
     <?php endwhile; wp_reset_postdata(); ?>
     </ul>
 <?php }
+
+//Displays the instructors
+function gymfitness_instructors_list($number_of_instructors = -1){ ?>
+        <ul>
+          <?php
+            $args = array(
+                'post_type' => 'instructors',
+                'posts_per_page' => $number_of_instructors
+            );
+            $instructors = new WP_Query($args);
+            while($instructors->have_posts()): $instructors->the_post();
+          ?>
+            <li class="instructor">
+                <?php the_post_thumbnail('mediumSize'); ?>
+                <div class="content text-center">
+                    <h3><?php the_title(); ?></h3>
+                    <?php the_content(); ?>
+                </div>
+                <div class="specialty">
+                    <?php 
+                      $specialty = get_field('specialty');
+                      foreach($specialty as $s):
+                    ?>
+                    <span class="tag"><?php echo $s; ?></span>
+                    <?php endforeach; ?>
+                </div>
+            </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+        </ul>
+<?php
+}
 
 ?>
