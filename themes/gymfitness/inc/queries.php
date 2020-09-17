@@ -33,7 +33,7 @@ function gymfitness_classes_list($number_of_classes = -1){ ?>
 
 //Displays the instructors
 function gymfitness_instructors_list($number_of_instructors = -1){ ?>
-        <ul>
+        <ul class="instructor-list">
           <?php
             $args = array(
                 'post_type' => 'instructors',
@@ -47,14 +47,14 @@ function gymfitness_instructors_list($number_of_instructors = -1){ ?>
                 <div class="content text-center">
                     <h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
-                </div>
-                <div class="specialty">
-                    <?php 
-                      $specialty = get_field('specialty');
-                      foreach($specialty as $s):
-                    ?>
-                    <span class="tag"><?php echo $s; ?></span>
-                    <?php endforeach; ?>
+                    <div class="specialty">
+                        <?php 
+                        $specialty = get_field('specialty');
+                        foreach($specialty as $s):
+                        ?>
+                        <span class="tag"><?php echo $s; ?></span>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </li>
         <?php endwhile; wp_reset_postdata(); ?>
