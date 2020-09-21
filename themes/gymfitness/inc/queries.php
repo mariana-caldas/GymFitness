@@ -62,4 +62,31 @@ function gymfitness_instructors_list($number_of_instructors = -1){ ?>
 <?php
 }
 
+//Displays the testimonials
+function gymfitness_testimonials_list($number_of_testimonials = -1){ ?>
+    <ul class="testimonials-list">
+        <?php 
+            $arguments = array(
+            'post_type' => 'testimonials',
+            'posts_per_page' => $number_of_testimonials
+            );
+            $testimonials = new WP_Query($arguments);
+            while($testimonials ->have_posts()): $testimonials->the_post();
+        ?>
+        <li class="testimonial text-center">
+            <blockquote>
+                <?php the_content() ?>
+            </blockquote>
+            <div class="footer-testimonials">
+                <?php the_post_thumbnail('thumbnail'); ?>
+                <p><?php the_title(); ?></p>
+            </div>
+
+        </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    </ul>
+
+<?php
+}
+
 ?>

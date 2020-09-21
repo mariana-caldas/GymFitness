@@ -73,6 +73,15 @@
         <?php gymfitness_instructors_list(); ?>
       </div>
     </section>
+    <section class="testimonials-frontpage">
+        <div class="container section">
+        <h2 class="text-primary text-center">Testimonials</h2>
+            <div>
+                <?php gymfitness_testimonials_list(3) ?>
+            <div>
+        </div>
+
+    </section>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
