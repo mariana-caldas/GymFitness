@@ -46,10 +46,9 @@ function gymfitness_instructors_list($number_of_instructors = -1){ ?>
                 <?php the_post_thumbnail('mediumSize'); ?>
                 <div class="content text-center">
                 <a href="<?php the_permalink(); ?>" title="Check the Instructor Description"><h3><?php the_title(); ?></h3>
-                <?php if(is_front_page()) : the_excerpt(); ?>
-                <?php else : ?>
-                <?php the_content(); ?>
-                <?php endif; ?>
+                <?php 
+                (is_front_page()) ? the_excerpt(): the_content();
+                ?>
                 </a>
                     <div class="specialty">
                         <?php 
