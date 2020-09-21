@@ -296,7 +296,8 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.instructor .content h3, .instructor .content p a {
+.instructor .content h3,
+.instructor .content a p {
   color: var(--black);
 }
 
@@ -664,7 +665,7 @@ img {
   .instructor .content h3 {
     color: var(--accentColor);
   }
-  .instructor .content a p{
+  .instructor .content a p {
     color: var(--white);
   }
 }
@@ -681,7 +682,7 @@ img {
 
 @media only screen and (max-width: 980px) and (min-width: 768px) {
   .instructor .content {
-    font-size: 65%;
+    font-size: 70%;
   }
   .instructor .tag {
     padding: 0.5rem 0.7rem;
