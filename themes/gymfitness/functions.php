@@ -28,9 +28,7 @@ function gymfitness_scripts(){
     endif;
 
     //bxSlider CSS
-    if(is_front_page()):
-        wp_enqueue_style('bxSliderCSS', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', array(), '4.2.12');
-    endif;
+    wp_enqueue_style('bxSliderCSS', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', array(), '4.2.12');
     
     //Main Stylesheet
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'googleFonts'), '1.0.0');
@@ -44,9 +42,7 @@ function gymfitness_scripts(){
     endif;
 
     //bxSlider JS
-    if(is_front_page()):
-        wp_enqueue_script('bxSliderJS',  'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), '4.2.12', true);
-    endif;
+    wp_enqueue_script('bxSliderJS',  'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), '4.2.12', true);
     
     //Main JS
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);

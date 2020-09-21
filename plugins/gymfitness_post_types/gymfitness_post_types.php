@@ -116,6 +116,7 @@ function gymfitness_instructors() {
 		'can_export'            => true,
 		'has_archive'           => false,
 		'exclude_from_search'   => false,
+		'supports' => array('title','thumbnail','editor','page-attributes','excerpt'),
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
@@ -171,6 +172,7 @@ function gymfitness_testimonials() {
 		'can_export'            => true,
 		'has_archive'           => false,
 		'exclude_from_search'   => false,
+		'supports' => array('title','thumbnail','editor','page-attributes','excerpt'),
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
