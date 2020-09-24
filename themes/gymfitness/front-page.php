@@ -74,7 +74,7 @@
       </div>
     </section>
     <section class="testimonials-frontpage">
-        <div class="container section">
+        <div class="container-testimonials">
         <h2 class="text-primary text-center">Testimonials</h2>
             <div>
                 <?php gymfitness_testimonials_list(3) ?>

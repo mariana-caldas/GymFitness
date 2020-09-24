@@ -81,8 +81,8 @@ function gymfitness_testimonials_list($number_of_testimonials = -1){ ?>
                 <?php the_content() ?>
             </blockquote>
             <div class="footer-testimonials">
-                <?php the_post_thumbnail('thumbnail'); ?>
-                <p><?php the_title(); ?></p>
+                <div><?php the_post_thumbnail('thumbnail'); ?></div>
+                <div><p><?php the_title(); ?></p></div>
             </div>
 
         </li>

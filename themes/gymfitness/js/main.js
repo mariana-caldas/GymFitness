@@ -7,7 +7,8 @@
         $('.testimonials-list').bxSlider({
             auto: true,
             pause: 6000,
-            stopAutoOnClick: true
+            controls: false,
+            mode: 'fade'
         });
     });
 
