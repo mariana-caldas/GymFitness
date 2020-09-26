@@ -321,6 +321,9 @@ img {
 .testimonial {
   text-shadow: var(--textShadowBlack);
 }
+ul.testimonials-list{
+  height: 300px;
+}
 .testimonial blockquote p:after {
   content: close-quote;
 }
