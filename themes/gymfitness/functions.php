@@ -59,6 +59,8 @@ function gymfitness_setup(){
     add_image_size('blog', 966, 400, true);
     //Add featured image
     add_theme_support( 'post-thumbnails');
+    //Add Titles to the pages
+    add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'gymfitness_setup');
 
