@@ -59,10 +59,10 @@
     </section>
     <section class="classes-frontpage">
         <div class="container section">
-            <h2 class="text-primary text-center">Our Classes</h2>
+            <h2 class="text-primary text-center"><?php the_field('classes_title')?></h2>
             <?php gymfitness_classes_list(4);?>
             <div class="button-container">
-                <a class="button" href="<?php echo get_permalink(get_page_by_title('Classes')); ?>">View All Classes</a>
+                <a class="button" href="<?php echo get_permalink(get_page_by_title('Classes')); ?>"><?php the_field('classes_button_text')?></a>
             </div>
         </div>
     </section>
@@ -75,7 +75,7 @@
     </section>
     <section class="testimonials-frontpage">
         <div class="container-testimonials">
-        <h2 class="text-primary text-center">Testimonials</h2>
+        <h2 class="text-primary text-center"><?php the_field('testimonials_title')?></h2>
             <div>
                 <?php gymfitness_testimonials_list(3) ?>
             <div>
