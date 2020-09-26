@@ -76,11 +76,12 @@
     <section class="testimonials-frontpage">
         <div class="container-testimonials">
         <h2 class="text-primary text-center"><?php the_field('testimonials_title')?></h2>
-            <div>
-                <?php gymfitness_testimonials_list(3) ?>
-            <div>
-        </div>
-
+        <div><?php gymfitness_testimonials_list(3) ?></div>
+    </section>
+    <section class="blog container section">
+        <h2 class="text-primary text-center"><?php the_field('blog_title')?></h2>
+        <p class="text-center"><?php the_field('blog_text')?></p>
+        <?php gymfitness_blog_list(4) ?>
     </section>
 <?php endwhile; ?>
 

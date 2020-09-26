@@ -69,12 +69,12 @@ function gymfitness_instructors_list($number_of_instructors = -1){ ?>
 function gymfitness_testimonials_list($number_of_testimonials = -1){ ?>
     <ul class="testimonials-list">
         <?php 
-            $arguments = array(
+            $args = array(
             'post_type' => 'testimonials',
             'posts_per_page' => $number_of_testimonials
             );
-            $testimonials = new WP_Query($arguments);
-            while($testimonials ->have_posts()): $testimonials->the_post();
+            $testimonials = new WP_Query($args);
+            while($testimonials->have_posts()): $testimonials->the_post();
         ?>
         <li class="testimonial text-center">
             <blockquote>
@@ -84,8 +84,25 @@ function gymfitness_testimonials_list($number_of_testimonials = -1){ ?>
                 <div><?php the_post_thumbnail('thumbnail'); ?></div>
                 <div><p><?php the_title(); ?></p></div>
             </div>
-
         </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    </ul>
+
+<?php
+}
+
+//Displays the blog posts on the front-page
+function gymfitness_blog_list($number_of_posts = -1){ ?>
+    <ul class="blog-entries">
+        <?php
+            $args = array(
+              'post_type' => 'post',
+              'posts_per_page' => $number_of_posts,
+            );
+            $blog = new WP_Query($args);
+            while($blog->have_posts()): $blog->the_post();
+        ?>
+        <?php get_template_part('template-parts/blog', 'loop'); ?>
         <?php endwhile; wp_reset_postdata(); ?>
     </ul>
 
