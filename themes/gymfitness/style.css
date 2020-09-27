@@ -132,15 +132,31 @@ img {
   background-color: var(--darkGrey);
   padding: 1rem 0;
 }
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo img {
   width: 50%;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
 }
 .logo img:hover {
   opacity: 0.6;
+}
+.site-title{
+  color: var(--white);
+  font-weight: bold;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+}
+.site-title:hover{
+   opacity: 0.6;
 }
 /* Header Front Page */
 .front-page .site-header {
