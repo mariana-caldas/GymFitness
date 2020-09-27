@@ -1,12 +1,29 @@
 <?php get_header('front-page'); ?>
-<?php while(have_posts()) : the_post(); ?>
     <?php 
-        $image = get_field('hero_image');
-        if( $image ): 
+        $imageHero = get_field('hero_image');
+        $imageTestimonials = get_field('testimonials_image');
+        if( $imageHero ): 
     ?>
         <style type="text/css">
             body.front-page .site-header {
-                background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(<?php echo $image['url']; ?>);
+                background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url(<?php echo $imageHero['url']; ?>);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+        </style>
+    <?php endif; ?>
+    <?php if( $imageTestimonials ):  ?>
+        <style>
+            .testimonials-frontpage {
+                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+                url(<?php echo $imageTestimonials['url']; ?>);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                padding: 4rem 0;
+                color: var(--white);
             }
         </style>
     <?php endif; ?>
@@ -83,6 +100,4 @@
         <p class="text-center"><?php the_field('blog_text')?></p>
         <?php gymfitness_blog_list(4) ?>
     </section>
-<?php endwhile; ?>
-
 <?php get_footer(); ?>
