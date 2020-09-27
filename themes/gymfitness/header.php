@@ -17,9 +17,13 @@
                         $custom_logo= get_theme_mod( 'custom_logo' );
                         $image = wp_get_attachment_image_src( $custom_logo);
                     ?>
-                    <a href="<?php echo home_url() ?>" title="Go to Gym Fitness Homepage">
-                        <img src="<?php echo $image[0]; ?>" alt="Gym Fitness Logo" />
-                    </a>
+                    <?php if ($custom_logo) : ?>
+                        <a href="<?php echo home_url() ?>" title="Go to Gym Fitness Homepage">
+                            <img src="<?php echo $image[0]; ?>" alt="Gym Fitness Logo" />
+                        </a>
+                    <?php else : ?> 
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="Go to the Homepage"><p class="site-title"><?php bloginfo( 'name' ); ?></p></a>
+                    <?php endif; ?>
                 </div>
                 <?php
                     $args = array(
