@@ -13,8 +13,12 @@
         <div class="container header-grid">
             <div class="navigation-bar">
                 <div class="logo">
-                    <a href="<?php echo home_url() ?>" title="Gym Fitness Logo">
-                        <img src="<?php echo get_template_directory_uri() . "/img/logo.svg" ?>" alt="GymFitness Logo" />
+                    <?php 
+                        $custom_logo= get_theme_mod( 'custom_logo' );
+                        $image = wp_get_attachment_image_src( $custom_logo);
+                    ?>
+                    <a href="<?php echo home_url() ?>" title="Go to Gym Fitness Homepage">
+                        <img src="<?php echo $image[0]; ?>" alt="Gym Fitness Logo" />
                     </a>
                 </div>
                 <?php

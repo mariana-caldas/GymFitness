@@ -61,6 +61,8 @@ function gymfitness_setup(){
     add_theme_support( 'post-thumbnails');
     //Add Titles to the pages
     add_theme_support('title-tag');
+    //Add Custom Logo to the template
+    add_theme_support( 'custom-logo' );
 }
 add_action('after_setup_theme', 'gymfitness_setup');
 
