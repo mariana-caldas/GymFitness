@@ -12,8 +12,23 @@ In this template, three plugins have been developed:
 
 <br/>
 
+**1. Frontpage Desktop**
 
-**1. Contact Us Page**
+![Frontpage Desktop](/project-images-github/frontpage-desktop.png)
+
+
+<br/>
+<br/>
+
+**2. Frontpage Mobile**
+
+![Frontpage Mobile](/project-images-github/frontpage-mobile.png)
+
+
+<br/>
+<br/>
+
+**3. Contact Us Page**
 
 ![Contact Us Page](/project-images-github/contact-us-page.png)
 
@@ -21,7 +36,7 @@ In this template, three plugins have been developed:
 <br/>
 <br/>
 
-**2. Page Classes**
+**4. Page Classes**
 
 ![Classes Page](/project-images-github/page-classes-desktop.png)
 
@@ -29,7 +44,7 @@ In this template, three plugins have been developed:
 <br/>
 <br/>
 
-**3. Page Classes Single with sidebar**
+**5. Page Classes Single with sidebar**
 
 ![Classes Page Sidebar](/project-images-github/classes-sidebar.png)
 
@@ -37,7 +52,7 @@ In this template, three plugins have been developed:
 <br/>
 <br/>
 
-**4. About Us Page**
+**6. About Us Page**
 
 ![About Us Page](/project-images-github/about-us-gymfitness.png)
 
@@ -45,7 +60,7 @@ In this template, three plugins have been developed:
 <br/>
 <br/>
 
-**5. Gallery Page**
+**7. Gallery Page**
 
 ![Gallery Page](/project-images-github/gallery-page.png)
 
@@ -53,7 +68,7 @@ In this template, three plugins have been developed:
 <br/>
 <br/>
 
-**6. Gallery Page Mobile**
+**8. Gallery Page Mobile**
 
 ![Gallery Page Mobile](/project-images-github/gallery-mobile.png)
 
