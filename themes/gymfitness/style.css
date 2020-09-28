@@ -247,6 +247,11 @@ img {
   height: 0.15em;
 }
 
+/* Adding a box shadow to the featured images on the pages*/
+img.attachment-blog.size-blog.wp-post-image {
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Page Template*/
 .page {
   padding: 5rem 0;
