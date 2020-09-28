@@ -30,7 +30,7 @@ In this template, three plugins have been developed:
 
 **3. Contact Us Page**
 
-![Contact Us Page](/project-images-github/contact-us-page.png)
+![Contact Us Page](/project-images-github/contact-us.png)
 
 
 <br/>
@@ -38,7 +38,7 @@ In this template, three plugins have been developed:
 
 **4. Page Classes**
 
-![Classes Page](/project-images-github/page-classes-desktop.png)
+![Classes Page](/project-images-github/classes.png)
 
 
 <br/>
@@ -46,7 +46,7 @@ In this template, three plugins have been developed:
 
 **5. Page Classes Single with sidebar**
 
-![Classes Page Sidebar](/project-images-github/classes-sidebar.png)
+![Classes Page Sidebar](/project-images-github/classes-single.png)
 
 
 <br/>
@@ -54,7 +54,7 @@ In this template, three plugins have been developed:
 
 **6. About Us Page**
 
-![About Us Page](/project-images-github/about-us-gymfitness.png)
+![About Us Page](/project-images-github/about-us.png)
 
 
 <br/>
@@ -62,7 +62,7 @@ In this template, three plugins have been developed:
 
 **7. Gallery Page**
 
-![Gallery Page](/project-images-github/gallery-page.png)
+![Gallery Page](/project-images-github/gallery.png)
 
 
 <br/>
