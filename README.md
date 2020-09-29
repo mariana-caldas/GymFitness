@@ -8,6 +8,8 @@ In this template, three plugins have been developed:
 * A custom widget plugin to display the available classes on the sidebar. The users can edit the number of classes to be displayed on the Dashboard.
 * A shortcode plugin that provides a shortcode to display a map (Google Maps) on the Contact Us page. The users can edit the map coordinates, zoom, and add the Google API Key on the page Contact Us through fields created with the [ACF plugin](https://www.advancedcustomfields.com/blog/google-maps-api-settings/).
 
+Check out the the live project: [Gym Fitness](https://www.marianacaldas.com/gymfitness/)
+
 ---
 
 <br/>
