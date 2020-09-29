@@ -22,17 +22,17 @@ Check out the the live project: [Gym Fitness](https://www.marianacaldas.com/gymf
 <br/>
 <br/>
 
-**2. Frontpage Mobile**
-
-![Frontpage Mobile](/project-images-github/frontpage-mobile.png)
-
-
-<br/>
-<br/>
-
-**3. Contact Us Page**
+**2. Contact Us Page**
 
 ![Contact Us Page](/project-images-github/contact-us.png)
+
+
+<br/>
+<br/>
+
+**3. Shortcode Google Map plugin**
+
+![Shortcode Google Map Plugin](/project-images-github/shortcode-plugin-google-map.png)
 
 
 <br/>
@@ -54,7 +54,15 @@ Check out the the live project: [Gym Fitness](https://www.marianacaldas.com/gymf
 <br/>
 <br/>
 
-**6. About Us Page**
+**6. Widget Sidebar**
+
+![Widget Sidebar](/project-images-github/custom-widget-sidebar.png)
+
+
+<br/>
+<br/>
+
+**7. About Us Page**
 
 ![About Us Page](/project-images-github/about-us.png)
 
@@ -62,7 +70,7 @@ Check out the the live project: [Gym Fitness](https://www.marianacaldas.com/gymf
 <br/>
 <br/>
 
-**7. Gallery Page**
+**8. Gallery Page**
 
 ![Gallery Page](/project-images-github/gallery.png)
 
@@ -70,7 +78,4 @@ Check out the the live project: [Gym Fitness](https://www.marianacaldas.com/gymf
 <br/>
 <br/>
 
-**8. Gallery Page Mobile**
-
-![Gallery Page Mobile](/project-images-github/gallery-mobile.png)
 
