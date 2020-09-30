@@ -32,7 +32,7 @@ Check out the the live project: [Gym Fitness](https://www.marianacaldas.com/gymf
 
 **3. Shortcode Google Map plugin**
 
-![Shortcode Google Map Plugin](/project-images-github/shortcode-plugin-google-map.png)
+![Shortcode Google Map Plugin](/project-images-github/google-map-plugin.png)
 
 
 <br/>
