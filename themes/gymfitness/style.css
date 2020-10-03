@@ -349,7 +349,6 @@ ul.testimonials-list{
 }
 .bx-wrapper img {
   border-radius: 50%;
-  /* box-shadow: 0 0 5px var(--black); */
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: var(--mediumGrey);
