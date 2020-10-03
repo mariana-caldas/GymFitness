@@ -454,6 +454,9 @@ ul.testimonials-list{
   line-height: 2.2rem;
   color: var(--mediumGrey);
 }
+.sidebar-img-blog{
+  display:none;
+}
 
 /*Gallery Page*/
 .gallery-images {
@@ -794,6 +797,12 @@ ul.testimonials-list{
   }
   .widget-blog {
     margin-top: 4rem;
+  }
+  .sidebar-img-thumbnail{
+    display:none;
+  }
+  .sidebar-img-blog{
+    display:block;
   }
   .acf-map {
     height: 300px;

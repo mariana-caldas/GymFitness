@@ -51,7 +51,8 @@
             ?>
             <li class="sidebar-class-item-list">
                 <div class="sidebar-widget-class-image">
-                    <?php the_post_thumbnail('thumbnail'); ?>
+					<div class="sidebar-img-thumbnail"><?php the_post_thumbnail('thumbnail'); ?></div>
+					<div class="sidebar-img-blog"><?php the_post_thumbnail('blog'); ?></div>
                 </div>
                 <div class="sidebar-widget-class-content">
                     <a href="<?php the_permalink(); ?>" title="Check out the class description">
