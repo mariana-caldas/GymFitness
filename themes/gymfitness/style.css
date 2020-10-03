@@ -25,6 +25,7 @@
   --black: #212121;
   --textShadowBlack: 1px 1px 1px var(--black);
   --textShadowGrey: 1px 1px 2px var(--mediumGrey);
+  --boxShadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -91,6 +92,9 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+.container > img, a > img, .main-content img, li img{
+  box-shadow: var(--boxShadow);
 }
 
 /* Utilities */
@@ -247,11 +251,6 @@ img {
   height: 0.15em;
 }
 
-/* Adding a box shadow to the featured images on the pages*/
-img.attachment-blog.size-blog.wp-post-image {
-  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
-}
-
 /* Page Template*/
 .page {
   padding: 5rem 0;
@@ -350,7 +349,7 @@ ul.testimonials-list{
 }
 .bx-wrapper img {
   border-radius: 50%;
-  box-shadow: 0 0 5px var(--black);
+  /* box-shadow: 0 0 5px var(--black); */
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: var(--mediumGrey);
