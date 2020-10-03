@@ -792,6 +792,9 @@ ul.testimonials-list{
   .card-content p.meta span {
     color: var(--black);
   }
+  .widget-blog {
+    margin-top: 4rem;
+  }
   .acf-map {
     height: 300px;
   }
