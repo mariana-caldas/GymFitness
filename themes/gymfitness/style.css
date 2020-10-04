@@ -151,6 +151,9 @@ img {
 .logo img:hover {
   opacity: 0.6;
 }
+.logo a > img{
+  box-shadow:none;
+}
 .site-title{
   color: var(--white);
   font-weight: bold;
